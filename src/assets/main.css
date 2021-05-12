@@ -1,0 +1,46 @@
+footer .header{
+    color:#ffff33;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav.navbar a,
+footer a,
+footer .body, 
+.social a,
+.social{
+    color: #EAEAEA;
+    font-size: 13px;
+    text-decoration: none;
+}
+a:hover, a:active{
+    color: #EAEAEA !important;
+    text-decoration: underline;
+}
+nav.navbar a.active.router-link-exact-active,
+nav.navbar a:hover{
+    font-weight: 700;
+    color:#ffff33 !important;
+    text-decoration: underline;
+}
+
+.blue-color{
+    color:#0f2466;
+}
+.yellow-color{
+    color:#ffff33;
+}
+.blue-bg{
+    background-color:#0f2466;
+}
+.yellow-bg{
+    background-color:#ffff33;
+}
+.dark-bg{
+    background-color: #000;
+}
+
+.link{
+    cursor: pointer;
+}

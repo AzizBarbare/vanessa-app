@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- Main & template page  -->
+  <div id="app" class="position-relative">
+    <div class="position-relative clearfix">
+      <div class="position-absolute blue-bg layer"></div>
+      <ui-social-net />
+      <ui-navbar />
+    </div>
+    <ui-caroussel />
+    <div class="viewer">
+      <router-view></router-view>
+    </div>
+    <ui-footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UiSocialNet from "./components/UiSocialNet";
+import UiCaroussel from "./components/UiCaroussel";
+import UiNavbar from "./components/UiNavbar";
+import UiFooter from "./components/UiFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    UiSocialNet,
+    UiNavbar,
+    UiCaroussel,
+    UiFooter,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.layer{
+  width: 100%;
+  height: 140px;
+  z-index: 97;
+  opacity: 0.3;
+}
+.viewer {
+  min-height: 200px;
 }
 </style>
